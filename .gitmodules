@@ -1,0 +1,3 @@
+[submodule "WEPPO-gameroom"]
+	path = WEPPO-gameroom
+	url = git@github.com:agnpawicka/WEPPO-gameroom.git
