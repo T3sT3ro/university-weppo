@@ -37,10 +37,10 @@ async function fetchNow() {
             commit;
         `);
 
-        await client.query(`
-        INSERT INTO person(name, surname) 
-            (SELECT md5(random()::text)::varchar(20), md5(random()::text)::varchar(20) from generate_series(1,50000));
-        CREATE INDEX person_index ON person`);
+        // await client.query(`
+        // INSERT INTO person(name, surname) 
+        //     (SELECT md5(random()::text)::varchar(20), md5(random()::text)::varchar(20) from generate_series(1,50000));
+        // CREATE INDEX person_index ON person`);
         // return R.prop('id', R.head(result.rows));
     } finally {
         client.end()
